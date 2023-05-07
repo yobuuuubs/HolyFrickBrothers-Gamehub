@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blank Webpage</title>
+        <style>
+            body {
+                background: url("https://th.bing.com/th/id/OIP.d1k8P9ZDFf6l8m5w2kD_awHaEK?w=273&h=180&c=7&r=0&o=5&pid=1.7") top/cover;
+            }
+            header {
+                background: #5f0080;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5em;
+            }
+            #discord-link,
+            #socials-link {
+                color: #fff;
+                margin-left: 1em;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            #discord-link:hover,
+            #socials-link:hover {
+                text-decoration: underline;
+            }
+            #open-button {
+                background: red;
+                color: #fff;
+                font-weight: bold;
+                border: none;
+                border-radius: 0.2em;
+                padding: 0.5em 1em;
+                cursor: crosshair;
+            }
+            #open-button:hover {
+                background-color: #cc0000;
+            }
+            h1 {
+                font-weight: bold;
+                font-size: 4em;
+                color: #f1f1f1;
+                text-shadow: 2px 2px 4px #000;
+                position: relative;
+                display: inline-block;
+                padding: 0.2em 0.5em;
+                background-color: rgba(90, 0, 130, 0.6);
+                border-radius: 50%/100%;
+                margin: 0;
+            }
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 9999;
+                text-align: center;
+                padding-top: 100px;
+                font-size: 30px;
+                color: #fff;
+                font-weight: bold;
+            }
+            .overlay a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                margin: 10px;
+            }
+            .button {
+                background: red;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+                cursor: crosshair;
+            }
+            .button:hover {
+                background-color: #cc0000;
+            }
+            #socials-link {
+                color: #f00;
+                border: 1px solid #000;
+                border-radius: 5px;
+                padding: 10px 20px;
+                margin-right: 1em;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .overlay a:hover {
+                color: #cc0000;
+            }
+            .overlay button {
+                background-color: red;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+                cursor: crosshair;
+            }
+            .overlay button:hover {
+                background-color: #cc0000;
+            }
+             .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .link {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: blue;
+      }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div><span style="font-weight: bold; font-size: 1.2em; color: black;">HolyFrickBrother's Game Hub</span><a href="#" id="socials-link">Socials</a></div>
+            <button id="open-button" onclick="window.open('about:blank').location.href='https://ruby.motortruck1221.tech';">Open Proxy</button>
+        </header>
+        <h1>Welcome!</h1>
+        <div id="overlay" class="overlay"><a href="#">Discord</a><a href="#">GitHub</a><button onclick="document.getElementById('overlay').style.display='none';">Close</button></div>
+        <script>
+            document.getElementById("socials-link").addEventListener("click", function () {
+                document.getElementById("overlay").style.display = "block";
+            });
+            function displayLinks() {
+			// Array of hyperlinks
+			var links = [
+				{ text: "Google", url: "https://www.google.com" },
+				{ text: "Facebook", url: "https://www.facebook.com" },
+				{ text: "Twitter", url: "https://www.twitter.com" }
+			];
+
+			// Loop through the array and display the hyperlinks
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				document.write("<a href='" + link.url + "'>" + link.text + "</a><br>");
+			}
+		}
+        </script>
+      <div>
+   <a href="https://example.com" style="font-size: 49px; font-weight: bold; color: red;">Proxies</a>
+   <div>
+   
+   </div>
+   <a href="https://example.com" style="font-size: 49px; font-weight: bold; color: red;">Games</a>
+      </div>
+ <p style="font-size: 24px; font-weight: bold; color: white;">At the top of the screen, you'll find links to my social media accounts. For more information, you can join the Discord community or check out my GitHub. The GitHub is open-source, and you can find more of my projects or code for future projects. Join the community to stay updated on the latest news and interact with other members.</p>
+
+     </body>
+</html>
